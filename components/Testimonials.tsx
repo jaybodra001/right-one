@@ -6,22 +6,22 @@ import { Quote } from 'lucide-react';
 export const Testimonials: React.FC = () => {
   const reviews = [
     {
-      content: "RightOne helped us scale our engineering team fast. Their candidates weren't just skilled; they fit our startup culture perfectly.",
-      author: "Sarah Jenkins",
-      role: "Founder, TechBloom",
-      avatar: "https://picsum.photos/seed/sarah/105/105"
+      content: "Right One Recruitments did a great job. Our position was filled quickly with quality candidates. Happy with their recruitment support.",
+      author: "Sandip Hirpara (CEO & Founder)",
+      role: "Pranshu enterprise",
+      // avatar: "https://picsum.photos/seed/sarah/105/105"
     },
     {
-      content: "As a young job seeker, I felt seen for my potential, not just my years of experience. They landed me my dream role in 2 weeks.",
-      author: "Michael Chen",
-      role: "UX Designer",
-      avatar: "https://picsum.photos/seed/michael/105/105"
+      content: "Fast hiring and quality candidates. Good experience with Right One Recruitments.",
+      author: "Chirag Gondaliya (Owner)",
+      role: "Shreenathji enterprise",
+      // avatar: "https://picsum.photos/seed/michael/105/105"
     },
     {
       content: "Affordable and incredibly professional. They're now our go-to partner for all our hiring needs. Highly recommended.",
-      author: "Robert Wilson",
-      role: "HR Director, Nexus Logistics",
-      avatar: "https://picsum.photos/seed/robert/105/105"
+      author: "HR Director",
+      role: "Ami life science",
+      // avatar: "https://picsum.photos/seed/robert/105/105"
     }
   ];
 
@@ -41,9 +41,9 @@ export const Testimonials: React.FC = () => {
               <Quote className="text-indigo-100 w-[3.15rem] h-[3.15rem] mb-[1.575rem]" />
               <p className="text-slate-700 italic mb-[2.1rem] text-[1.05rem] leading-relaxed flex-grow">"{r.content}"</p>
               <div className="flex items-center space-x-[1.05rem]">
-                <img src={r.avatar} alt={r.author} className="w-[3.15rem] h-[3.15rem] rounded-full object-cover" />
+                {/* <img src={r.avatar} alt={r.author} className="w-[3.15rem] h-[3.15rem] rounded-full object-cover" /> */}
                 <div>
-                  <h4 className="font-bold text-slate-900 text-[1.05rem]">{r.author}</h4>
+                  <h4 className="font-bold text-slate-900 text-[1.0rem]">{r.author}</h4>
                   <p className="text-[0.78rem] text-slate-500 font-medium uppercase tracking-wider">{r.role}</p>
                 </div>
               </div>
