@@ -40,13 +40,13 @@ export const Contact: React.FC = () => {
 
               <div className="space-y-[1.575rem] lg:space-y-[2.1rem]">
                 <ScrollReveal direction="right" delay={0.2}>
-                  <div className="flex items-center space-x-[1.05rem] group cursor-pointer" onClick={() => window.location.href = 'tel:9724090650'}>
+                  <div className="flex items-center space-x-[1.05rem] group cursor-pointer" onClick={() => window.location.href = 'tel:9537472860'}>
                     <div className="w-[2.625rem] h-[2.625rem] bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-white/20 transition-colors">
                       <Phone className="w-[1.05rem] h-[1.05rem]" />
                     </div>
                     <div>
                       <p className="text-[0.656rem] text-indigo-200 font-bold uppercase tracking-widest">Call</p>
-                      <p className="text-[1.05rem] lg:text-[1.18rem] font-semibold">9724090650</p>
+                      <p className="text-[1.05rem] lg:text-[1.18rem] font-semibold">+91 9537472860</p>
                     </div>
                   </div>
                 </ScrollReveal>
@@ -58,7 +58,7 @@ export const Contact: React.FC = () => {
                     </div>
                     <div>
                       <p className="text-[0.656rem] text-indigo-200 font-bold uppercase tracking-widest">Email</p>
-                      <p className="text-[1.05rem] lg:text-[1.18rem] font-semibold break-all">anjali.rightone@gmail.com</p>
+                      <p className="text-[1.05rem] lg:text-[1.18rem] font-semibold break-all">contact@rightonenow.com</p>
                     </div>
                   </div>
                 </ScrollReveal>
