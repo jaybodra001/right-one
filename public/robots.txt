@@ -1,0 +1,32 @@
+# robots.txt for RightOne Recruitment Agency
+# Last updated: February 2026
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /private
+Disallow: /temp
+Disallow: /*.json$
+Disallow: /*?*
+
+# Crawl-delay settings
+Crawl-delay: 1
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Sitemap location
+Sitemap: https://rightonenow.com/sitemap.xml
