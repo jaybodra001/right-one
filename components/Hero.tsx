@@ -71,7 +71,7 @@ export const Hero: React.FC = () => {
             </a>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.9} className="mt-[2.1rem] lg:mt-[3.15rem] flex items-center space-x-[1.05rem]">
+          {/* <ScrollReveal delay={0.9} className="mt-[2.1rem] lg:mt-[3.15rem] flex items-center space-x-[1.05rem]">
             <div className="flex -space-x-[0.525rem]">
               {[1, 2, 3, 4].map((i) => (
                 <img 
@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
             <p className="text-[0.82rem] text-slate-400 font-medium">
               Trusted by <span className="text-slate-900 font-bold">210+ companies</span>
             </p>
-          </ScrollReveal>
+          </ScrollReveal> */}
         </div>
 
         <div className="lg:col-span-5 xl:col-span-6 relative flex justify-center lg:justify-end">
