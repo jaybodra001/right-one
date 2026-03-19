@@ -48,12 +48,24 @@ app.post('/api/send-mail', async (req, res) => {
                 cc: process.env.CONTACT_COPY || 'contact@rightonenow.com',
                 subject: type === 'client' ? `Business Inquiry: ${company}` : `Candidate Application: ${name}`,
                 html: `
-                    <div style="font-family: Arial, sans-serif; padding: 20px; border: 1px solid #ddd; border-radius: 8px;">
-                        <h2 style="color: #4f46e5;">New ${type} Submission</h2>
-                        <p><strong>Name:</strong> ${name}</p>
-                        <p><strong>Email:</strong> ${email}</p>
-                        ${type === 'client' ? `<p><strong>Phone:</strong> ${phone}</p><p><strong>Company:</strong> ${company}</p>` : ''}
-                        <p><strong>Message:</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
+                    <div style="font-family: 'Segoe UI', Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; background-color: #ffffff;">
+                        <div style="background-color: #4f46e5; padding: 30px; text-align: center;">
+                            <img src="https://res.cloudinary.com/dlaykkhkc/image/upload/v1768728865/Rightone_Logo_f9irxr.svg" alt="RightOne" style="height: 50px; width: auto;" />
+                            <h1 style="color: #ffffff; margin-top: 20px; font-size: 24px;">New ${type === 'client' ? 'Client Inquiry' : 'Candidate Submission'}</h1>
+                        </div>
+                        <div style="padding: 40px; color: #1e293b; line-height: 1.6;">
+                            <div style="background-color: #f8fafc; padding: 25px; border-radius: 12px; border: 1px solid #f1f5f9;">
+                                <p><strong>Name:</strong> ${name}</p>
+                                <p><strong>Email:</strong> ${email}</p>
+                                ${type === 'client' ? `<p><strong>Phone:</strong> ${phone}</p><p><strong>Company:</strong> ${company}</p>` : ''}
+                                <p style="margin-top: 15px;"><strong>Message:</strong></p>
+                                <p style="color: #475569; font-style: italic;">${message.replace(/\n/g, '<br/>')}</p>
+                            </div>
+                            ${type === 'candidate' ? '<p style="margin-top: 20px; color: #4f46e5; font-weight: bold;">The CV/Resume is attached.</p>' : ''}
+                            <p style="margin-top: 30px; font-size: 14px; color: #64748b; text-align: center;">
+                                Sent from RightOne Local Development Server
+                            </p>
+                        </div>
                     </div>
                 `,
                 attachments: []
